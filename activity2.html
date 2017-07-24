@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sandru Moses Valle</title>
+	<script type="text/javascript">
+		window.alert("Code by: Sandru Moses Valle");
+	</script>
+</head>
+<body>
+<button id="btn" onclick="innerTest()">innerHtml</button>
+<button id="btn-1" onclick="docwriteTest()">document.write</button>
+<button id="btn-2" onclick="windowalertTest()">window.alert</button>
+<button id="btn-3" onclick="consolelogTest()">console.log</button>
+<div>
+	<p id="pg">
+	1. innerHtml button will change this list as it is enclosed in < p > tag. <br>
+	2. document.write will totally change the page. <br>
+	3. window.alert will show an alert box on top-center page. <br>
+	4. console.log will only be seen via console/ f12.
+	</p>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	function innerTest(){
+		document.getElementById("pg").innerHTML = "innerHTML Activated";
+	}
+
+	function docwriteTest(){
+		document.write("Hi, you have activated document.write function!");
+	}
+
+	function windowalertTest(){
+		window.alert("Hi, you have activated the alert window");
+	}
+
+	function consolelogTest(){
+		console.log("Hi there, you have activated the console.log function! OH YEAH");
+	}
+
+</script>
