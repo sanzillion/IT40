@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="flex-item">
+			<h3>&nbsp MValle Activity_3</h3>
+			<button onclick="sanz()">
+				Hex to Deci
+			</button>
+			<button onclick="moses()">
+				Oct to Deci
+			</button>
+			<button onclick="valz()">
+				Bi to Deci
+			</button>
+			<p id="name"></p>
+		</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	function sanz(){
+		var num = prompt("Enter hexadecimal number: ");
+		con = "0x"+num;
+		deci = parseInt(con);
+		document.getElementById("name").innerHTML = num + " = " + deci;
+	}
+
+	function moses(){
+		var num = prompt("Enter octal number: ");
+		con = 0+num;
+		deci = parseInt(con);
+		document.getElementById("name").innerHTML = num + " = " +deci;
+	}
+
+	function valz(){
+		var num = prompt("Enter binary number: ");
+		con = 0+'b'+num;
+		dec = parseInt(con);
+		document.getElementById("name").innerHTML = dec;
+	}
+
+
+</script>
+
+<style>
+	.container{
+		display: flex;
+	}
+
+	.flex-item{
+		  background: tomato;
+		  padding: 5px;
+		  width: 300px;
+		  height: 150px;
+		  margin-top: 10px;
+		  margin-left: 10px;
+		  color: white;
+		  font-weight: bold;
+		  padding-left: 20px;
+	}
+
+</style>
