@@ -26,23 +26,21 @@
 
 	function sanz(){
 		var num = prompt("Enter hexadecimal number: ");
-		con = "0x"+num;
-		deci = parseInt(con);
+		var con = "0x"+num;
+		var deci = parseInt(con);
 		document.getElementById("name").innerHTML = num + " = " + deci;
 	}
 
 	function moses(){
 		var num = prompt("Enter octal number: ");
-		con = 0+num;
-		deci = parseInt(con);
+		var deci = parseInt(num, 8);
 		document.getElementById("name").innerHTML = num + " = " +deci;
 	}
 
 	function valz(){
 		var num = prompt("Enter binary number: ");
-		con = 0+'b'+num;
-		dec = parseInt(con);
-		document.getElementById("name").innerHTML = dec;
+		var dec = parseInt(num, 2);
+		document.getElementById("name").innerHTML = num + " = " + dec;
 	}
 
 
